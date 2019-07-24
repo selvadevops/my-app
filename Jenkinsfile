@@ -1,6 +1,6 @@
 node{
   stage('SCM Checkout'){
-    git 'https://github.com/selvadevops/maven-simple'
+    git 'https://github.com/selvadevops/my-app'
   }
   stage('Compile-package'){
     def mvnHome = tool name: 'maventamil', type: 'maven'   
